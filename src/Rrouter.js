@@ -1,0 +1,23 @@
+import React from "react";
+import App from "./pages/App";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Cart from "./pages/Cart";
+import NotFound from "./pages/NotFound";
+
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+const Router = () => {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={App} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
+        <Route path="/cart" component={Cart} />
+        <Route component={NotFound} />
+      </Switch>
+    </BrowserRouter>
+  );
+};
+export default Router;

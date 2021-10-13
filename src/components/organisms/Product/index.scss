@@ -1,0 +1,43 @@
+.product {
+  .img-wrapper {
+    position: relative;
+    width: 300px;
+
+    .out-stock-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+      color: rgb(133, 83, 99);
+      font-size: 30px;
+    }
+
+    .out-stock {
+      opacity: 0.2;
+    }
+  }
+
+  .p-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .add-car {
+      padding: 5px;
+      background-color: #ccc;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+
+    .out-stock-btn {
+      opacity: 0.2;
+      cursor: initial;
+    }
+  }
+}

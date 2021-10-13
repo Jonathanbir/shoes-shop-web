@@ -1,0 +1,23 @@
+.tool-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 30px auto;
+  border-bottom: 2px solid #000;
+
+  .logo-text {
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+  }
+
+  .search-input {
+    width: 600px;
+  }
+
+  .control {
+    cursor: pointer;
+  }
+}
